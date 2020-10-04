@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./BS.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: #272829;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif;
+    }
+
+    .about {
+      background: #f5f8fd;
+    }
+
+    .resume {
+      background: #f5f8fd;
+    }
+
+    section {
+      padding: 60px 0;
+      overflow: hidden;
+    }
+
+
+    .section-title {
+      padding-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      color: #173b6c;
+    }
+
+    .section-title p {
+      margin-bottom: 0;
+    }
+
+    .about .content h3 {
+      font-weight: 700;
+      font-size: 26px;
+      color: #173b6c;
+    }
+
+    .about .content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .about .content ul li {
+      padding-bottom: 10px;
+    }
+
+    .about .content ul i {
+      font-size: 20px;
+      padding-right: 2px;
+      color: #149ddd;
+    }
+
+    .skills .progress {
+      height: 50px;
+      display: block;
+      background: none;
+    }
+
+    .skills .progress .skill {
+      padding: 10px 0;
+      margin: 0 0 6px 0;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      color: #050d18;
+    }
+
+    .skills .progress .skill .val {
+      float: right;
+      font-style: normal;
+    }
+
+    .skills .progress-bar-wrap {
+      background: #dce8f8;
+    }
+
+    .skills .progress-bar {
+      width: 1px;
+      height: 10px;
+      transition: .9s;
+      background-color: #149ddd;
+    }
+
+    .resume .resume-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #050d18;
+    }
+
+    .resume .resume-item {
+      padding: 0 0 20px 20px;
+      margin-top: -2px;
+      border-left: 2px solid #1f5297;
+      position: relative;
+    }
+
+
+    .resume .resume-item h4 {
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      color: #050d18;
+      margin-bottom: 10px;
+    }
+
+    .resume .resume-item h5 {
+      font-size: 16px;
+      background: #e4edf9;
+      padding: 5px 15px;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .resume .resume-item ul {
+      padding-left: 20px;
+    }
+
+    .resume .resume-item ul li {
+      padding-bottom: 10px;
+    }
+
+    .contact {
+      padding-bottom: 130px;
+    }
+
+    .contact .info {
+      padding: 30px;
+      background: #fff;
+      width: 100%;
+      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .contact .info i {
+      font-size: 20px;
+      color: #149ddd;
+      float: left;
+      width: 44px;
+      height: 44px;
+      background: #dff3fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .linkedin a {
+
+      padding-left: 1.6cm;
+    }
+
+    .twitter a {
+
+      padding-left: 1.6cm;
+    }
+
+    .contact .info h4 {
+      padding: 0 0 0 60px;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #050d18;
+    }
+
+    .contact .info p {
+      padding: 0 0 10px 60px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #173b6c;
+    }
+
+    .contact .info .email p {
+      padding-top: 5px;
+    }
+
+    
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Portfolio</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://drive.google.com/file/d/1YsVXXMK4ELjBZAkAZuvOAl0NBu6xU7WQ/view?usp=sharing">Download My
+              Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" id="intro">
+          <h2><strong> Hi I'm Chaitanya Pawar</strong> </h2>
+          <p>A computer science student passionate about programming and design.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img
+              src="https://learnworthy.net/wp-content/uploads/2019/10/Top-5-programming-languages-every-programmer-should-know-in-2019.jpg"
+              class="img-fluid" alt="Programmer" height="100%" width="100%">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Computer Science Student &amp; Travelholic tech geek</h3>
+            <p class="font-italic">
+              My name is Chaitanya Pawar. I'm an Bachelor's student at KKWIEER Computer Science Department. I was born
+              and raised in Nashhik. I did HSC D.D. Bytco Boys High-School, Pune University. Also I am pursuing BA from
+              Panchavati College, YCM open university. I like to travel and photograph. I believe travelling gives you a
+              new perspective to everything. You get to know a lot about the different cultures, the cuisines, their
+              history, the language and all the small unique things every place has to offer.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li> <strong>Birthday:</strong> 1 November 2001</li>
+                  <li> <strong>City:</strong> Nashik, India</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li> <strong>Age:</strong> 19</li>
+                  <li> <strong>Degree:</strong> BE(Computer Science) + BA</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>I think skills are more important than certificates. Having a bunch of certificates doesn't mean you are
+            profecient in those fields, you must have some practical knowledge.</p>
+          <p>Below are some of the fields in which i am profecient</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">70%</i></span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:70%">
+                70%
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">60%</i></span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                style="width:60%">
+                60%
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">75%</i></span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                style="width:75%">
+                75%
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">C++ <i class="val">65%</i></span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                style="width:65%">
+                65%
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Bootstrap <i class="val">45%</i></span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                style="width:45%">
+                45%
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">50%</i></span>
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                style="width:50%">
+                50%
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>My educational qualification is given below. </p>
+          <p>I am doing Bachelor's in two different fields</p>
+        </div>
+
+        <div class="row">
+          <div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor Of Engineering (Computer Science )</h4>
+              <h5>2019 - 2023</h5>
+              <p><em>KKWIEER, Nashik, IN</em></p>
+
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Arts </h4>
+              <h5>2019 - 2022</h5>
+              <p><em>LVH College, Nashik, IN</em></p>
+
+            </div>
+          </div>
+          <div class="resume-item">
+            <h4>HSC</h4>
+            <h5>2017 - 2019</h5>
+            <p><em>D.D. Bytco Boys High-School, Nashik, IN</em></p>
+
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+
+
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Feel free to contact me. Contact info is given below</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <h4>Location:</h4>
+                <p>Nashik,India</p>
+              </div>
+
+              <div class="email">
+                <h4>Email:</h4>
+                <p>chaitanyanitpawar@gmail.com</p>
+              </div>
+              <div class="linkedin">
+                <h4>Linkedin:</h4>
+                <a href="https://linkedin.com/in/chaitanyanitpawar">chaitanyanitpawar</a>
+
+              </div>
+              <div class="twitter">
+                <h4>Twitter:</h4>
+                <a href="https://twitter.com/PawarChaitanyaN">PawarChaitanyaN</a>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSdCp_jRLAKoYwir1ma6ODOnKkRESvpeJI_-U1nnCBsJbTCA/viewform?embedded=true" width="100%" height="823" frameborder="0" scrolling="No" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+
+          <div id="footer">
+            <br>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+  <footer class="container-fluid text-center">
+    <p>&copy; Copyright <strong><span>chaitanyanitpawar</span></strong></p>
+    <p> Designed By <strong><span>Chaitanya Pawar</span></strong></p>
+
+  </footer>
+
+</body>
+
+</html>
