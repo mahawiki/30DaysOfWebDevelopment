@@ -6,3 +6,4 @@
 | No. | Name | Code Link |
 |---- | ---------|--------|
 |1 | Prashantkumar Singh| [Html/Css/Js](/prashant-singh)
+|2 | Chaitanya Pawar| [Html/Css/Bootstrap](/chaitanya-pawar)
