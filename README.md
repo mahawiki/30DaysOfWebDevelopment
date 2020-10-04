@@ -3,6 +3,6 @@
 
 ### Table of Contents
 
-| No. | Name |
-|---- | ---------|
-|1 | Prashantkumar Singh|
+| No. | Name | Code Link |
+|---- | ---------|--------|
+|1 | Prashantkumar Singh| [Html/Css/Js](/prashant-singh)
