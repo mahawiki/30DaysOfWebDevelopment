@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Personal Portfolio </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- favicon.ico -->
+        <link href="https://image.ibb.co/icGEVA/android-chrome-192x192.png" rel="shortcut icon">
+        <!-- jQuery v3.3.1 -->
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    </head>
+    <body>
+        <p id="home">.</p>
+        
+        <!-- Navigation bar -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home" class="scroll active" id="home-link">Home</a></li>
+                <li><a href="#about" class="scroll" id="about-link">About</a></li>
+                <li><a href="#projects" class="scroll" id="projects-link">Projects</a></li>
+                <li><a href="#contact" class="scroll" id="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Welcome screen -->
+        <header id="welcome-section">
+            <h1>Welcome to Foster's portfolio webpage</h1>
+        </header>
+
+        <!-- About me section -->
+        <section class="aboutBox" id="about">
+            <h1 class="title">About me</h1>
+            <img src="IMG-20200905-WA0043.jpg" alt="Picture of Foster Annie" id="myPicture">
+            <p>Hi, my name is Foster Annie, and I was born the 12th of July, 1998. I'm from Ghana. I am currently studying Electrical/Electronic Engineering at Ho Technical University. I have enthusiastically been studying programming, not only in school, but also via Internet. I think I have tried every possible way of learning, as in, watching many hours of video tutorials, partaking in a 30days web development class organised by Mr. Ankitkur and team. I'm a workaholic and I see myself as a future programmer.</p>
+            <strong>Skills Acquired</strong>
+            <p>
+                <ol>HTML</ol>
+                <ol>CSS</ol>
+                <ol>Bootstrap</ol>
+            </p>
+        </section>
+
+        <!-- Projects section -->
+        <section class="portfoliBox" id="projects">
+            <h1 class="title">Projects</h1>
+            <p>Most of my projects are assignments from my lessons with Mr. Ankitkumar and team.</p>
+            <br>
+            <div class="container">
+                <div class="project-tile">
+                    <a href="#"><img src="IMG_20200913_120831.jpg" alt="view more info" /></a>
+                    <p class="btn"><a href="#">See more</a></p>
+                </div>
+                <div class="project-tile">
+                    <a href="#"><img src="IMG_20201007_003349.jpg" alt="view more info" /></a>
+                    <p class="btn"><a href="#">See more</a></p>
+                </div>
+                <div class="project-tile">
+                    <a href="#"><img src="IMG_20201007_003411.jpg" alt="view more info" /></a>
+                <p class="btn"><a href="#">See more</a></p>
+                </div>
+                <!-- Project "Counter of Days" -->
+                <div class="project-tile">
+                    <a href="#"><img src="IMG_20200913_094618.jpg" alt="view more info" /></a>
+                    <p class="btn"><a href="#">See more</a></p>
+                </div>
+            </div>
+    </br>
+        </section>
+        <!-- Contact section -->
+        <section class="contactBox" id="contact">
+            <p>Let's work together</p>
+            <div class="links-container">
+                <a href="https://www.linkedin.com/in/foster-annie-27a421168" target="_blank" id="profile-link">LinkedIn</a>
+                <a href="https://github.com/Fostero04" target="_blank" class="logo">GitHub</a>
+            </div>
+            
+            <p>Connect with me</p>
+            <div class="links-container">
+                <a href="https://www.freecodecamp.org/fostero04" target="_blank" class="logo">freecodecamp</a>
+                <a href="https://www.instagram.com/mr_f.annie/" target="_blank" class="logo">Instagram</a>
+                <a href="https://twitter.com/phosta004" target="_blank" class="logo">Twitter</a>
+                <a href="https://web.facebook.com/foster.annie.1" target="_blank" class="logo">Facebook</a>
+            </div>
+            <br>
+            <br>
+            <div class = “form”>
+              <div class = "well">
+              <input type = "text" placeholder= "First Name">
+              <input type = "text" placeholder="Last Name">
+              <input type = "text" placeholder = "Phone #">
+              <input type  = "text" placeholder = "E-mail">
+              <button class = "btn-info">Submit</button>
+              </div>
+              </div>
+            </br>
+        </br>
+        </section>
+        <!-- Footer -->
+        <footer><p id="copyright">&copy; Foster Annie</p></footer>
+    </body>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Bitter');
+
+/** Desktop styles **/
+/* Universal styles */
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("https://image.ibb.co/dkSHfA/background.jpg");
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    font-family: monospace;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 1.8rem;
+}
+
+/* Navigation styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(#222, #000, #000);
+    width: 100vw;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 15px;
+    margin-right: 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a.active {
+    color: orange;
+}
+
+/* Welcome screen styles */
+#welcome-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    margin: -15vh 5vw 10vh 5vw;
+    font-family: 'Bitter', serif;
+    font-variant: small-caps;
+    cursor: default;
+}
+
+/* About me section styles */
+.aboutBox {
+    min-height: 100vh;
+    padding: 5vw;
+    color: white;
+    background-image: linear-gradient(#111, #111, #111, #111, #222);
+}
+
+#myPicture {
+    width: 33vw;
+    float: right;
+    border-radius: 10px;
+    margin-left: 5vw;
+}
+
+.aboutBox p {
+    text-align: justify;
+}
+
+/* Portfolio section styles */
+.portfoliBox {
+    min-height: 100vh;
+    padding: 5vw;
+    color: white;
+    background-image: linear-gradient(#222, #222, #222, #222, #333);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .project-tile a img {
+    border-radius: 10px 10px 0 0;
+    width: 40vw;
+    height: 33vh;
+}
+
+.container .project-tile p {
+    text-align: center;
+    margin: -1.5vh 0 5vh 0;
+    background-color: white;
+    color: black;
+    padding: 1vh 0;
+}
+
+.container #last-item {
+    visibility: hidden;
+}
+
+/* Contact section styles */
+.contactBox {
+    min-height: 100vh;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5vw;
+    color: white;
+    background-color: #333;
+}
+
+.contactBox p {
+    margin-top: 15vh;
+    font-size: 1.25rem;
+}
+
+.contactBox .links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactBox #profile-link, .contactBox .logo {
+    text-decoration: none;
+    color: orange;
+    border: 1px solid orange;
+    padding: 10px;
+}
+
+.contactBox #profile-link:hover, .contactBox .logo:hover {
+    background-color: white;
+}
+
+/* Footer styles */
+footer {
+    background-image: linear-gradient(#000, #000, #111);
+    color: white;
+    text-align: center;
+    padding: 1vh 0;
+    font-size: 0.75rem;
+}
+
+
+/** Landscape smartphone styles | Low resolution tablet styles **/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Universal styles */
+    html {
+        font-size: 14px;
+    }
+
+    /* Navigation styles */
+    #navbar ul li a {
+        padding: 12.5px;
+    }
+
+    /* Welcome screen styles */
+    #welcome-section {
+        font-size: 1.55rem;
+    }
+
+    /* About me section styles */
+    .aboutBox {
+        padding: 7.5vw;
+    }
+
+    #myPicture {
+        float:none;
+        display: block;
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+    /* Portfolio section styles */
+    .portfolioBox {
+        padding: 7.5vw;
+    }
+
+    .container .project-tile a img {
+        width: 40vw;
+        height: 25vh;
+    }
+
+    /* Contact section styles */
+    .contactBox {
+        padding: 7.5vw;
+    }
+
+    .contactBox #profile-link, .contactBox .logo {
+        margin: 1vh 1vw;
+    }
+
+    /* Footer styles */
+    footer {
+        padding: 1.25vh 0;
+    }
+}
+
+
+/** Portrait smartphone styles **/
+@media only screen and (max-width: 480px) {
+    /* Universal styles */
+    html {
+        font-size: 12px;
+    }
+
+    /* Navigation styles */
+    #navbar ul {
+        justify-content: space-around;
+    }
+
+    #navbar ul li a {
+        padding: 10px;
+        margin-right: 0;
+    }
+
+    /* Welcome screen styles */
+    #welcome-section {
+        font-size: 1.35rem;
+    }
+
+    /* About me section styles */
+    .aboutBox {
+        padding: 10vw;
+    }
+
+    #myPicture {
+        float:none;
+        display: block;
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+    .aboutBox p {
+        text-align: center;
+    }
+
+    /* Portfolio section styles */
+    .portfolioBox {
+        padding: 10vw;
+    }
+
+    .container .project-tile a img {
+        width: 80vw;
+        height: 25vh;
+    }
+
+    .container #last-item {
+        display: none;
+    }
+
+    /* Contact section styles */
+    .contactBox {
+        padding: 10vw;
+    }
+
+    .contactBox #profile-link, .contactBox .logo {
+        padding: 7.5px;
+        margin: 1vh 1vw;
+    }
+
+    /* Footer styles */
+    footer {
+        padding: 1.5vh 0;
+    }
+}
+</style>
+</html>
