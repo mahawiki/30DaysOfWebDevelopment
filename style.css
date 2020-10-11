@@ -1,0 +1,52 @@
+.title
+{
+    text-align: center;
+    padding: 50px 0 20px;
+}
+.title h1
+{
+    margin : 0;
+    padding: 0;
+    color:#262626;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+.container
+{
+    width: 50%;
+    height: 400px;
+    background:#fff;
+    margin: 0 auto;
+    border : 2px solid #fff;
+    box-shadow: 0 15px 40px rgba(0,0,0,.5);
+}
+.container .middle
+{
+    float : middle;
+    width :50%;
+    height:400px;
+    box-sizing:border-box;
+
+
+}
+.formbox
+{
+    width: 100%;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    height: 400%;
+    background: #fff;
+}
+.formbox p
+{
+    margin:0;
+    padding: 0;
+    font-weight: bold;
+    columns: #a6afa6;
+
+}
+.formbox input
+{
+    margin-bottom: 20px;
+
+}
