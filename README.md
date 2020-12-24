@@ -6,4 +6,7 @@
 | No. | Name | Code Link |
 |---- | ---------|--------|
 |1 | Prashantkumar Singh| [Html/Css/Js](/prashant-singh)
-|2 | Chaitanya Pawar| [Html/Css/Bootstrap](/chaitanya-pawar)
+|2 | BHIMAVARAPU NAVYASRI | [Html/Css/Bootstrap](/BHIMAVARAPU-NAVYASRI)
+|3 | Prashantkumar Singh| [Html/Css/Js](/prashant-singh)
+|4 | Foster Annie | [Html/Css/Bootstrap](/Foster-Annie)
+|5 | Chaitanya Pawar| [Html/Css/Bootstrap](/chaitanya-pawar)
