@@ -1,0 +1,22 @@
+style.css
+th {
+background-color:grey ;
+}
+
+h1{color:Blue;}
+h2{ color:red;}
+
+#p1{
+Background-color:grey;
+}
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+padding: 20px;
+margin: auto;
+}
+
+.list-center {  
+    display: grid; 
+    place-items: center; 
+} 
