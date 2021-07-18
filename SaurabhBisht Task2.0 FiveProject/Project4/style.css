@@ -1,0 +1,299 @@
+
+/* Universal Set */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Removing the underline and making it block element */
+#menu ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+/* Higher the Z-index value closer to the user */
+#menu ul{
+    list-style: none;
+    z-index: 1;
+    
+}
+
+/* Navigation style */
+#menu ul li{
+    background-color: rgb(8, 8, 8);
+    border: 2px solid white;
+    height: 40px;
+    width: 265px;
+    float: left;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px ; 
+    position: relative;
+}
+
+/* Hover effect */
+#menu ul li a:hover{
+    background-color: rgb(64, 221, 200);
+}
+
+/* Menu section */
+#menu ul ul{
+    position: absolute;
+    display: none;
+}
+
+/* When hover to menu then hidden element is converted into block */
+
+#menu ul li:hover > ul
+{
+
+    display: block;
+}
+
+/* Animation Slider */
+
+#outerbox{
+width: 1366px;
+height: 550px;
+overflow: hidden;
+}
+#sliderbox{
+    position: relative;
+    width: 5464px;
+    /* animation-name: saurabh;
+    animation-duration: 20s;
+    animation-iteration-count: infinite; */
+    animation: saurabh 20s infinite;
+}
+#sliderbox img{
+    width: 1366px;
+    float: left;
+
+}
+
+/* Mathematical Formula */
+
+@keyframes saurabh
+{
+  0%{
+        left: 0px;
+    }
+    20%{
+        left: 0px;
+    }
+  25%{
+      left: -1366px;
+  }
+  45%{
+      left: -1366px;
+  }
+  50%{
+      left: -2732px;
+  }
+  70%{
+      left: -2732px;
+  }
+  75%{
+      left: -4098px;
+  }
+  95%{
+      left: -4098px;
+  }
+  100%{
+      left: -5460px;
+  }
+}
+
+
+
+section h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+.catagory{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+
+/* All best food item photos css */
+.cat {
+    width: 390px;
+    float: left;
+    margin: 20px 0px 20px 0px;
+    box-shadow: 3px 3px 5px 5px #e7e4e4;
+    transition: tranform 3s;
+}
+
+/* Hover animation effect */
+
+.cat:hover{
+    transform: scale(1.08);
+
+}
+
+.catagory img{
+    width: 100%;
+}
+
+
+.checked{
+    color: orange;
+}
+
+
+.star{
+    text-align: center;
+    
+}
+
+
+p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.footer{
+height: 200px;
+width: 100%;
+background-color:black;
+border: 2px solid red;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.abc{
+    border-radius: 100%;
+    height: 200px;
+    box-shadow: 5px 5px 5px 5px #080808;
+    margin: 10px 30px 10px 20px;
+}
+.saurabh div{
+    float: left;
+}
+.foot{
+    background-color: rgb(189, 208, 211);
+    border-radius: 2%;
+}
+
+.about{
+    height: 100px;
+    padding-top: 20px;
+    text-align: center;
+  
+    margin-bottom: 30px;
+ 
+}
+.para1{
+    /* background-color: rgba(246, 233, 215, 0.842); */
+    height: 200px;
+    color: rgb(0, 0, 0);
+    line-height: 36px;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    list-style-type: square ;
+   text-align: justify;
+}
+
+.para2{
+    /* background-color: rgba(215, 239, 246, 0.842); */
+    height: 200px;
+    color: rgb(0, 0, 0);
+    line-height: 36px;
+    padding-top: 30px;
+    text-align: center;
+}
+.rate{
+font-size: large;
+font-weight: bold;
+}
+
+.about{
+    margin: 0px;
+    background-color: antiquewhite;
+}
+
+#fur{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(160, 12, 12);
+    color: white;
+}
+
+.veg{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn{
+  
+     display: flex;
+     justify-content: space-around; 
+     align-items: center;
+}
+.btn input:hover{
+    background-color: rgb(89, 204, 89);
+}
+.btn input{
+    border: 2px solid rgb(163, 156, 156);
+    border-radius: 20px;
+    height: 40px;
+    width: 140px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: orange;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.odd{
+background-color: aqua;
+    
+}
+.field1{
+    background-color: rgb(248, 246, 242);
+    margin: 10px 60px;
+    width: 87%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.f1{
+    padding: 10px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.lagend{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  
+}
+.field2{
+    background-color: rgb(226, 224, 129);
+    margin: 10px 60px;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    float: left;
+    margin-top: 20px;
+}
+.map{  
+    border-radius: 10px;
+}
