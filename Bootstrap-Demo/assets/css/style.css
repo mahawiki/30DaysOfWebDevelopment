@@ -1,0 +1,186 @@
+.header{
+  background-color:#87509c;
+  color: #fff !important;
+  padding: 30px 100px;
+}
+
+.header-logo {
+  color: #ffc107 !important;
+}
+
+.navbar-toggler {
+  border: 1.0px solid #fff;s
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+  margin: 0px 20px;
+  font-size: 1.2em;
+}
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+.nav-link:hover, .nav-link:focus {
+  text-decoration: none;
+}
+a:hover {
+  background-color: #643a79;
+  color: #fff;
+  text-decoration: underline;
+  border-radius: 5px;
+}
+
+.header-logo{
+  color: #fff;
+  font-weight: bold;
+}
+
+.my-header {
+  margin-bottom: 0rem;
+  background: #87509c;
+  color: #fff;
+  text-align: center;
+  border-radius: 0px;
+  height: 500px;
+}
+
+.my-header p{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.my-header .btndesign{
+  margin: 50px;
+  background: #eb7d4b;
+  width: 400px;
+  height: 60px;
+  border-color: #b5400b;
+  border-style: solid;
+  border-width: 0 1px 4px 1px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.my-header .btndesign:hover{
+  margin: 50px;
+  background: #b5400b;
+  border-color: #eb7d4b;
+  border-style: solid;
+  border-width: 0 1px 4px 1px;
+  text-transform: uppercase;
+}
+
+.my-service{
+  margin-bottom: 0rem;
+  background: #17c2a4;
+  color: #fff;
+  text-align: center;
+  border-radius: 0px;
+  height: 600px;
+}
+
+.my-service .lead-text {
+  font-size: 1.50rem;
+  font-weight: 500;
+}
+
+.my-service .columns{
+  margin: 0px;
+  padding: 30px;
+}
+
+.my-service .columnstxt-header{
+  margin: 20px 0px;
+  font-weight: bold;
+}
+
+.my-service .img-size{
+  width: 100px;
+  height: 100px;
+}
+/* Team start */
+.meetteam{
+  margin-bottom: 0rem;
+  background: #e7f1f8;
+  color: #000;
+  text-align: center;
+  border-radius: 0px;
+  height: 700px;
+}
+
+.meetteam .lead-text {
+  font-size: 1.50rem;
+  font-weight: 500;
+}
+
+.meetteam .columns{
+  padding: 30px;
+  margin: 20px auto;
+}
+
+.meetteam .columnstxt-header{
+  margin: 20px 0px;
+  font-weight: bold;
+}
+
+.meetteam .img-size{
+  width: 100px;
+  height: 100px;
+  margin: 40px auto;
+}
+
+.meetteam .userimg{
+  background: #878787;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 10px auto;
+}
+/* team end */
+
+@media only screen and (max-width: 600px) {
+  .header {
+  padding: 9px 30px;
+}
+
+  .my-header {
+    height: 500px;
+  }
+
+  .my-header .btndesign{
+    margin: 0px;
+  }
+
+
+  .my-header .btndesign:hover{
+    margin:0px;
+
+  }
+
+  .my-service{
+    height: 1100px;
+  }
+  .meetteam{
+    height: 200px;
+  }
+
+  .my-header p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 38px 0px;
+  }
+
+
+  .my-header .btndesign{
+    width: 300px;
+  }
+
+  .my-service{
+    height: 1200px;
+  }
+
+  .meetteam{
+    height: 2100px;
+  }
+}
