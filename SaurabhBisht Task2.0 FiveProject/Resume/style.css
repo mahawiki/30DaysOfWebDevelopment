@@ -1,0 +1,27 @@
+.left{
+    float: left;
+}
+.img{
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 20vh;
+    margin-right: 8vh;
+   
+}
+.add{
+    font-size: large;
+    line-height: 5vh;
+}
+body{
+    background-color: aliceblue;
+}
+.right{
+    float: right;
+    margin: 2vh 10vh;
+}
+.mid{
+    text-align: center;
+   font-weight: bold;
+   color: brown;
+   font-size: 50px;
+}
