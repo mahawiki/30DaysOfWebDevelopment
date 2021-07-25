@@ -1,0 +1,13 @@
+h1{
+   color: rgb(116, 66, 20); 
+}
+.tag{
+    text-align: center;
+    color: rgb(20, 218, 20);
+ 
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-size: large;
+    color: rgb(105, 105, 219);
+}
