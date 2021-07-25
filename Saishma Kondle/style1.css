@@ -1,0 +1,38 @@
+h1{
+	color: red;
+	text-decoration: underline;
+	font-family: arial;
+}
+h3{
+	color: maroon;
+	text-decoration: underline;
+	font-family: arial;
+}
+
+.skills{
+	background-color: tomato;
+	width: 25%;
+
+}
+.table{
+	background-color: lightyellow;
+	border-style: solid;
+	border-width: medium;
+	margin: 40px;
+	width: 50%;
+	
+}
+.programming{
+	background-color: yellow;
+	width: 25%;
+	
+}
+.interests{
+	background-color: lightgreen;
+	width: 25%;
+	
+}
+.details{
+	background-color: plum;
+	width: 25%;
+}
