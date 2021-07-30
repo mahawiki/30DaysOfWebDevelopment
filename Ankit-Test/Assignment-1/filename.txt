@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+</head>
+	<body>
+		<div>
+			<a href="intro1.html">Intro 1</a>
+			<a href="intro2.html">Intro 2</a>
+			<a href="intro.html">Home</a>
+		</div>
+
+		<div>
+			<center>
+				<h1>Hello world !!</h1>
+				<hr/>
+			</center> 
+			<p id="paragraph1" align="right"><span style="color: red"> <b>Here is a first paragraph of text.</b> <i> Here is a second paragraph of text.</i> <u>Here is a third paragraph of text.</u> <sup> Here is a first paragraph of text.</sup> <sub>Here is a second paragraph of text. </sub> </span> Here is a third paragraph of text.Here is a first paragraph of text. Here is a second paragraph of text. sHere is a third paragraph of text.Here is a first paragraph of text. Here is a second paragraph of text.  Here is a third paragraph of text.Here is a first paragraph of text. Here is a second paragraph of text. Here is a third paragraph of text.</p> 
+			
+		</div>
+
+	</body>
+</html>
