@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Week 4 JavaScript Assignments</h2>
+
+<p>Q.3.) Create a function with parameters as name. If the length of name is greater than 10 show hello world,  else show World hello.</p>
+
+<p id="output"></p>
+
+<script>
+var display;
+function myName(name) 
+
+{
+	document.write(name);
+	console.log(name);
+	
+	if (name.length>=10) 
+	{
+  		display = "HELLO WORLD !";
+	} 
+	
+	else 
+	{
+  		display = "WORLD HELLO";
+	}
+	
+	document.getElementById("output").innerHTML = display;
+	console.log(display);
+}
+
+myName("YASH CHAUDHARI");
+
+</script>
+
+
+
+</body>
+</html>
+

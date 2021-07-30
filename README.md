@@ -10,3 +10,4 @@
 |3 | Prashantkumar Singh| [Html/Css/Js](/prashant-singh)
 |4 | Foster Annie | [Html/Css/Bootstrap](/Foster-Annie)
 |5 | Chaitanya Pawar| [Html/Css/Bootstrap](/chaitanya-pawar)
+|6 | Yash Chaudhari| [Html/Css/Bootstrap](/Yash-Chaudhari)
